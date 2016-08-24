@@ -8,20 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		2B4EC2A01D6C981800445A2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4EC29F1D6C981800445A2C /* AppDelegate.swift */; };
-		2B4EC2A21D6C981800445A2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4EC2A11D6C981800445A2C /* ViewController.swift */; };
+		2B4EC2A21D6C981800445A2C /* SigninRegistorPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4EC2A11D6C981800445A2C /* SigninRegistorPage.swift */; };
 		2B4EC2A51D6C981800445A2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B4EC2A31D6C981800445A2C /* Main.storyboard */; };
 		2B4EC2A71D6C981800445A2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B4EC2A61D6C981800445A2C /* Assets.xcassets */; };
 		2B4EC2AA1D6C981800445A2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B4EC2A81D6C981800445A2C /* LaunchScreen.storyboard */; };
+		2B4EC2B81D6C9D2900445A2C /* SigninPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4EC2B71D6C9D2900445A2C /* SigninPage.swift */; };
+		2B4EC2BA1D6C9D6500445A2C /* RegistrationPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4EC2B91D6C9D6500445A2C /* RegistrationPage.swift */; };
+		2B4EC2BD1D6C9EA000445A2C /* ExtensionsAndHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4EC2BC1D6C9EA000445A2C /* ExtensionsAndHelpers.swift */; };
+		2B4EC2BF1D6CA1A500445A2C /* SalonHomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4EC2BE1D6CA1A500445A2C /* SalonHomePage.swift */; };
+		2B4EC2C11D6CA23800445A2C /* TabBarConstroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4EC2C01D6CA23800445A2C /* TabBarConstroller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2B4EC29C1D6C981800445A2C /* KinzHair.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KinzHair.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B4EC29F1D6C981800445A2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2B4EC2A11D6C981800445A2C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2B4EC2A11D6C981800445A2C /* SigninRegistorPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninRegistorPage.swift; sourceTree = "<group>"; };
 		2B4EC2A41D6C981800445A2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2B4EC2A61D6C981800445A2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B4EC2A91D6C981800445A2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B4EC2AB1D6C981800445A2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B4EC2B11D6C99D700445A2C /* ufonts.com_century-gothic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ufonts.com_century-gothic.ttf"; sourceTree = "<group>"; };
+		2B4EC2B71D6C9D2900445A2C /* SigninPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SigninPage.swift; sourceTree = "<group>"; };
+		2B4EC2B91D6C9D6500445A2C /* RegistrationPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationPage.swift; sourceTree = "<group>"; };
+		2B4EC2BC1D6C9EA000445A2C /* ExtensionsAndHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionsAndHelpers.swift; sourceTree = "<group>"; };
+		2B4EC2BE1D6CA1A500445A2C /* SalonHomePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SalonHomePage.swift; sourceTree = "<group>"; };
+		2B4EC2C01D6CA23800445A2C /* TabBarConstroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarConstroller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +65,44 @@
 		2B4EC29E1D6C981800445A2C /* KinzHair */ = {
 			isa = PBXGroup;
 			children = (
+				2B4EC2BB1D6C9E8C00445A2C /* ExtensionsAndHelpers */,
 				2B4EC29F1D6C981800445A2C /* AppDelegate.swift */,
-				2B4EC2A11D6C981800445A2C /* ViewController.swift */,
+				2B4EC2B21D6C9A1200445A2C /* SiginPages */,
 				2B4EC2A31D6C981800445A2C /* Main.storyboard */,
 				2B4EC2A61D6C981800445A2C /* Assets.xcassets */,
 				2B4EC2A81D6C981800445A2C /* LaunchScreen.storyboard */,
 				2B4EC2AB1D6C981800445A2C /* Info.plist */,
+				2B4EC2B11D6C99D700445A2C /* ufonts.com_century-gothic.ttf */,
 			);
 			path = KinzHair;
+			sourceTree = "<group>";
+		};
+		2B4EC2B21D6C9A1200445A2C /* SiginPages */ = {
+			isa = PBXGroup;
+			children = (
+				2B4EC2B31D6C9A2000445A2C /* views */,
+				2B4EC2A11D6C981800445A2C /* SigninRegistorPage.swift */,
+				2B4EC2C01D6CA23800445A2C /* TabBarConstroller.swift */,
+				2B4EC2B71D6C9D2900445A2C /* SigninPage.swift */,
+				2B4EC2B91D6C9D6500445A2C /* RegistrationPage.swift */,
+				2B4EC2BE1D6CA1A500445A2C /* SalonHomePage.swift */,
+			);
+			name = SiginPages;
+			sourceTree = "<group>";
+		};
+		2B4EC2B31D6C9A2000445A2C /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+		2B4EC2BB1D6C9E8C00445A2C /* ExtensionsAndHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				2B4EC2BC1D6C9EA000445A2C /* ExtensionsAndHelpers.swift */,
+			);
+			name = ExtensionsAndHelpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +176,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B4EC2A21D6C981800445A2C /* ViewController.swift in Sources */,
+				2B4EC2A21D6C981800445A2C /* SigninRegistorPage.swift in Sources */,
+				2B4EC2C11D6CA23800445A2C /* TabBarConstroller.swift in Sources */,
+				2B4EC2BA1D6C9D6500445A2C /* RegistrationPage.swift in Sources */,
+				2B4EC2B81D6C9D2900445A2C /* SigninPage.swift in Sources */,
+				2B4EC2BF1D6CA1A500445A2C /* SalonHomePage.swift in Sources */,
 				2B4EC2A01D6C981800445A2C /* AppDelegate.swift in Sources */,
+				2B4EC2BD1D6C9EA000445A2C /* ExtensionsAndHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
