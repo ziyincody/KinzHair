@@ -18,10 +18,18 @@ class TabBarConstroller: UITabBarController {
         let homeNavCon = UINavigationController(rootViewController: salonHomeCon)
         homeNavCon.title = "Home"
         
-        UINavigationBar.appearance().barTintColor = UIColor.blackColor()
+        let salonReservationPage = ChoosingServiceController()
+        let serviceNavCon = UINavigationController(rootViewController: salonReservationPage)
+        serviceNavCon.title = "Reservation"
         
-        viewControllers = [homeNavCon]
-        UITabBar.appearance().barTintColor = UIColor.blackColor()
+        let userInfoPage = UserInfoPage()
+        let userInfoNavCon = UINavigationController(rootViewController: userInfoPage)
+        userInfoNavCon.title = "Me"
+        
+        UINavigationBar.appearance().barTintColor = UIColor.black
+
+        viewControllers = [homeNavCon, serviceNavCon, userInfoNavCon]
+        UITabBar.appearance().barTintColor = UIColor.black
 
     }
 }

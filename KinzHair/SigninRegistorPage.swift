@@ -19,42 +19,42 @@ class SigninRegistorPage: UIViewController {
     
     let separatorLine:UIView = {
         let line = UIView()
-        line.backgroundColor = UIColor.blueColor()
+        line.backgroundColor = UIColor.blue
         line.translatesAutoresizingMaskIntoConstraints = false
         return line
     }()
     
     lazy var signinButton:CustomButton = {
         let button = CustomButton()
-        button.setTitle("Signin", forState: .Normal)
-        button.titleLabel?.font = UIFont(name: "CenturyGothic", size: 35)
-        button.addTarget(self, action: #selector(goToSigninPage), forControlEvents: .TouchUpInside)
+        button.setTitle("Signin", for: UIControlState())
+        button.titleLabel?.font = UIFont(name: "CenturyGothic", size: 25)
+        button.addTarget(self, action: #selector(goToSigninPage), for: .touchUpInside)
         return button
     }()
     
     lazy var registerButton:CustomButton = {
         let button = CustomButton()
-        button.setTitle("Register", forState: .Normal)
-        button.titleLabel?.font = UIFont(name: "CenturyGothic", size: 35)
-        button.addTarget(self, action: #selector(goToRegisterPage), forControlEvents: .TouchUpInside)
+        button.setTitle("Register", for: UIControlState())
+        button.titleLabel?.font = UIFont(name: "CenturyGothic", size: 25)
+        button.addTarget(self, action: #selector(goToRegisterPage), for: .touchUpInside)
 
         return button
     }()
     
     func goToSigninPage() {
         
-        self.presentViewController(SigninPage(), animated: true, completion: nil)
+        self.present(SigninPage(), animated: true, completion: nil)
     }
     
     func goToRegisterPage() {
         
-        self.presentViewController(RegistrationPage(), animated: true, completion: nil)
+        self.present(RegistrationPage(), animated: true, completion: nil)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = UIColor.blackColor()
+        view.backgroundColor = UIColor.black
         
         setupViewConstraints()
     }
@@ -66,26 +66,25 @@ class SigninRegistorPage: UIViewController {
         view.addSubview(signinButton)
         view.addSubview(registerButton)
 
-        appLabel.topAnchor.constraintEqualToAnchor(view.topAnchor, constant: 12).active = true
-        appLabel.centerXAnchor.constraintEqualToAnchor(view.centerXAnchor).active = true
-        appLabel.widthAnchor.constraintEqualToConstant(100).active = true
-        appLabel.heightAnchor.constraintEqualToConstant(100).active = true
+        appLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 12).isActive = true
+        appLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        appLabel.widthAnchor.constraint(equalToConstant: 100).isActive = true
+        appLabel.heightAnchor.constraint(equalToConstant: 100).isActive = true
         
-        separatorLine.centerYAnchor.constraintEqualToAnchor(view.centerYAnchor).active = true
-        separatorLine.centerXAnchor.constraintEqualToAnchor(view.centerXAnchor).active = true
-        separatorLine.widthAnchor.constraintEqualToConstant(1).active = true
-        separatorLine.heightAnchor.constraintEqualToConstant(150).active = true
+        separatorLine.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        separatorLine.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        separatorLine.widthAnchor.constraint(equalToConstant: 1).isActive = true
+        separatorLine.heightAnchor.constraint(equalToConstant: 150).isActive = true
         
-        signinButton.rightAnchor.constraintEqualToAnchor(separatorLine.leftAnchor, constant: -12).active = true
-        signinButton.centerYAnchor.constraintEqualToAnchor(separatorLine.centerYAnchor).active = true
-        signinButton.widthAnchor.constraintEqualToConstant(100).active = true
-        signinButton.heightAnchor.constraintEqualToConstant(100).active = true
+        signinButton.rightAnchor.constraint(equalTo: separatorLine.leftAnchor, constant: -12).isActive = true
+        signinButton.centerYAnchor.constraint(equalTo: separatorLine.centerYAnchor).isActive = true
+        signinButton.widthAnchor.constraint(equalToConstant: 100).isActive = true
+        signinButton.heightAnchor.constraint(equalToConstant: 100).isActive = true
         
-        registerButton.leftAnchor.constraintEqualToAnchor(separatorLine.rightAnchor, constant: 12).active = true
-        registerButton.centerYAnchor.constraintEqualToAnchor(separatorLine.centerYAnchor).active = true
-        registerButton.widthAnchor.constraintEqualToConstant(100).active = true
-        registerButton.heightAnchor.constraintEqualToConstant(100).active = true
+        registerButton.leftAnchor.constraint(equalTo: separatorLine.rightAnchor, constant: 12).isActive = true
+        registerButton.centerYAnchor.constraint(equalTo: separatorLine.centerYAnchor).isActive = true
+        registerButton.widthAnchor.constraint(equalToConstant: 100).isActive = true
+        registerButton.heightAnchor.constraint(equalToConstant: 100).isActive = true
     }
-
 }
 

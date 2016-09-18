@@ -10,50 +10,70 @@ import UIKit
 
 class SalonHomePage: UITableViewController {
     
+    static let salonImageId = "salonImageId"
+    static let salonDescriptionId = "salonDecriptionId"
+    static let salonLocationId = "salonLocationId"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = UIColor.blackColor()
+        view.backgroundColor = UIColor.black
+        tableView.register(SalonImageCell.self, forCellReuseIdentifier: SalonHomePage.salonImageId)
+        tableView.register(SalonDescriptionCell.self, forCellReuseIdentifier: SalonHomePage.salonDescriptionId)
+        tableView.register(SalonLocationCell.self, forCellReuseIdentifier: SalonHomePage.salonLocationId)
+        
+        tableView.tableFooterView = UIView()
+        tableView.estimatedRowHeight = 200
+        tableView.rowHeight = UITableViewAutomaticDimension
+        
+        //Data for testing
+        HairSalon.categories = ["MEN CUT", "WOMEN CUT", "HAIR COLOUR", "PERMING"]
+        HairSalon.stylists = [["SHARK","DOLPHIN"],["GIRL", "GIRL2"], ["GIRL3", "G4"], ["G5", "G6"]];
         
         setupNavBar()
     }
     
-    private func setupNavBar() {
-
-        let titleView = UILabel(frame:CGRectMake(0, 0, self.navigationController!.navigationBar.frame.width, self.navigationController!.navigationBar.frame.height))
+    fileprivate func setupNavBar() {
         
-        titleView.textColor = UIColor.whiteColor()
+        let titleView = UILabel(frame:CGRect(x: 0, y: 0, width: self.navigationController!.navigationBar.frame.width, height: self.navigationController!.navigationBar.frame.height))
+        
+        titleView.textColor = UIColor.white
         titleView.text = "asadsf Home"
-        titleView.textAlignment = .Center
+        titleView.font = UIFont(name: "Century Gothic", size: 25)
+        titleView.textAlignment = .center
         
         self.navigationItem.titleView = titleView
     }
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return 4
     }
     
-}
-
-class SalonImageCell: BaseTableViewCell {
-    
-    let salonImage:UIImageView = {
-        let iv = UIImageView()
-        iv.translatesAutoresizingMaskIntoConstraints = false
-        iv.contentMode = .ScaleAspectFit
-        iv.image = UIImage(named: )
-        return iv
-    }()
-    
-    override func setupViews() {
-        super.setupViews()
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        addSubview(salonImage)
-        addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|[v0]|", options: NSLayoutFormatOptions(), metrics: nil, views: ["v0":salonImage]))
-        addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|[v0]|", options: NSLayoutFormatOptions(), metrics: nil, views: ["v0":salonImage]))
-
+        if (indexPath as NSIndexPath).row == 0 {
+            
+            let cell = tableView.dequeueReusableCell(withIdentifier: SalonHomePage.salonImageId, for: indexPath) as! SalonImageCell
+            
+            return cell
+        }
         
+        if (indexPath as NSIndexPath).row == 1 {
+            
+            let cell = tableView.dequeueReusableCell(withIdentifier: SalonHomePage.salonDescriptionId, for: indexPath) as! SalonDescriptionCell
+            
+            return cell
+        }
+        
+        if (indexPath as NSIndexPath).row == 3 {
+            
+            let cell = tableView.dequeueReusableCell(withIdentifier: SalonHomePage.salonLocationId, for: indexPath) as! SalonLocationCell
+            
+            return cell
+        }
+        
+        return UITableViewCell()
     }
-    
 }
+

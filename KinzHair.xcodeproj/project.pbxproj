@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B096D6F1D73E50D0022359D /* ChoosingTimeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B096D6E1D73E50D0022359D /* ChoosingTimeController.swift */; };
+		2B096D721D73E9530022359D /* TimeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B096D711D73E9530022359D /* TimeHeaderView.swift */; };
+		2B096D741D73ED990022359D /* DateSlotsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B096D731D73ED990022359D /* DateSlotsCell.swift */; };
+		2B096D761D73EFFA0022359D /* DateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B096D751D73EFFA0022359D /* DateCell.swift */; };
+		2B096D781D73F34B0022359D /* TimeSlotsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B096D771D73F34B0022359D /* TimeSlotsCell.swift */; };
+		2B096D7A1D73F4040022359D /* TimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B096D791D73F4040022359D /* TimeCell.swift */; };
+		2B0C08FA1D777A2A00587EAA /* AppointmentSummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0C08F91D777A2A00587EAA /* AppointmentSummaryCell.swift */; };
+		2B0C08FD1D777D7E00587EAA /* ConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0C08FC1D777D7E00587EAA /* ConfirmationView.swift */; };
+		2B0C091D1D77D03600587EAA /* ChooseSalonPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0C091C1D77D03600587EAA /* ChooseSalonPage.swift */; };
 		2B4EC2A01D6C981800445A2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4EC29F1D6C981800445A2C /* AppDelegate.swift */; };
 		2B4EC2A21D6C981800445A2C /* SigninRegistorPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4EC2A11D6C981800445A2C /* SigninRegistorPage.swift */; };
 		2B4EC2A51D6C981800445A2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B4EC2A31D6C981800445A2C /* Main.storyboard */; };
@@ -17,9 +26,39 @@
 		2B4EC2BD1D6C9EA000445A2C /* ExtensionsAndHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4EC2BC1D6C9EA000445A2C /* ExtensionsAndHelpers.swift */; };
 		2B4EC2BF1D6CA1A500445A2C /* SalonHomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4EC2BE1D6CA1A500445A2C /* SalonHomePage.swift */; };
 		2B4EC2C11D6CA23800445A2C /* TabBarConstroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4EC2C01D6CA23800445A2C /* TabBarConstroller.swift */; };
+		2B5B2FD21D7C8F6400573A92 /* ManagementPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5B2FD11D7C8F6400573A92 /* ManagementPage.swift */; };
+		2B5B2FD41D7C8F7F00573A92 /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5B2FD31D7C8F7F00573A92 /* MenuBar.swift */; };
+		2B5B2FD61D7C8F8C00573A92 /* StylistsBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5B2FD51D7C8F8C00573A92 /* StylistsBar.swift */; };
+		2B5B2FD81D7C8FE000573A92 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5B2FD71D7C8FE000573A92 /* CalendarView.swift */; };
+		2B5B2FDB1D7D091500573A92 /* UserInfoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5B2FDA1D7D091500573A92 /* UserInfoPage.swift */; };
+		2B5B2FDF1D7D0AB600573A92 /* AppointmentInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5B2FDE1D7D0AB600573A92 /* AppointmentInfoCell.swift */; };
+		2B5B2FE11D7D0AD200573A92 /* UserInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5B2FE01D7D0AD200573A92 /* UserInfoCell.swift */; };
+		2BBA02901D729AA800C43755 /* ServiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBA028F1D729AA800C43755 /* ServiceCell.swift */; };
+		2BBA02921D729AD500C43755 /* ServiceHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBA02911D729AD500C43755 /* ServiceHeaderView.swift */; };
+		2BBA02931D729EEB00C43755 /* ufonts.com_century-gothic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2B4EC2B11D6C99D700445A2C /* ufonts.com_century-gothic.ttf */; };
+		2BBA02951D72A81300C43755 /* StylistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBA02941D72A81300C43755 /* StylistCell.swift */; };
+		2BCC41831D8DCAE2001768F5 /* ClientList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCC41821D8DCAE2001768F5 /* ClientList.swift */; };
+		2BCC41861D8E3B60001768F5 /* CalenderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCC41851D8E3B60001768F5 /* CalenderViewCell.swift */; };
+		2BCF66C91D8B708500B0E3EA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2BCF66C81D8B708500B0E3EA /* GoogleService-Info.plist */; };
+		2BF887481D768C0B0098635F /* AppointmentSummaryPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF887471D768C0B0098635F /* AppointmentSummaryPage.swift */; };
+		2BFAAD761D750AF000F88879 /* TimeSummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFAAD751D750AF000F88879 /* TimeSummaryCell.swift */; };
+		2BFB8F171D726BDE00F3770C /* HairSalon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFB8F161D726BDE00F3770C /* HairSalon.swift */; };
+		2BFB8F1D1D726DFE00F3770C /* SalonImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFB8F1C1D726DFE00F3770C /* SalonImageCell.swift */; };
+		2BFB8F201D72765000F3770C /* ChoosingServiceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFB8F1F1D72765000F3770C /* ChoosingServiceController.swift */; };
+		2BFB8F231D72788700F3770C /* ResetAndNextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFB8F221D72788700F3770C /* ResetAndNextView.swift */; };
+		628C3067F1AC6F3C37C80B16 /* Pods_KinzHair.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C707AC30769BCC63DC191C93 /* Pods_KinzHair.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B096D6E1D73E50D0022359D /* ChoosingTimeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoosingTimeController.swift; sourceTree = "<group>"; };
+		2B096D711D73E9530022359D /* TimeHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeHeaderView.swift; sourceTree = "<group>"; };
+		2B096D731D73ED990022359D /* DateSlotsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateSlotsCell.swift; sourceTree = "<group>"; };
+		2B096D751D73EFFA0022359D /* DateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateCell.swift; sourceTree = "<group>"; };
+		2B096D771D73F34B0022359D /* TimeSlotsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeSlotsCell.swift; sourceTree = "<group>"; };
+		2B096D791D73F4040022359D /* TimeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeCell.swift; sourceTree = "<group>"; };
+		2B0C08F91D777A2A00587EAA /* AppointmentSummaryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppointmentSummaryCell.swift; sourceTree = "<group>"; };
+		2B0C08FC1D777D7E00587EAA /* ConfirmationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmationView.swift; sourceTree = "<group>"; };
+		2B0C091C1D77D03600587EAA /* ChooseSalonPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseSalonPage.swift; sourceTree = "<group>"; };
 		2B4EC29C1D6C981800445A2C /* KinzHair.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KinzHair.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B4EC29F1D6C981800445A2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B4EC2A11D6C981800445A2C /* SigninRegistorPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninRegistorPage.swift; sourceTree = "<group>"; };
@@ -33,6 +72,28 @@
 		2B4EC2BC1D6C9EA000445A2C /* ExtensionsAndHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionsAndHelpers.swift; sourceTree = "<group>"; };
 		2B4EC2BE1D6CA1A500445A2C /* SalonHomePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SalonHomePage.swift; sourceTree = "<group>"; };
 		2B4EC2C01D6CA23800445A2C /* TabBarConstroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarConstroller.swift; sourceTree = "<group>"; };
+		2B5B2FD11D7C8F6400573A92 /* ManagementPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagementPage.swift; sourceTree = "<group>"; };
+		2B5B2FD31D7C8F7F00573A92 /* MenuBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
+		2B5B2FD51D7C8F8C00573A92 /* StylistsBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StylistsBar.swift; sourceTree = "<group>"; };
+		2B5B2FD71D7C8FE000573A92 /* CalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		2B5B2FDA1D7D091500573A92 /* UserInfoPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoPage.swift; sourceTree = "<group>"; };
+		2B5B2FDE1D7D0AB600573A92 /* AppointmentInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppointmentInfoCell.swift; sourceTree = "<group>"; };
+		2B5B2FE01D7D0AD200573A92 /* UserInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoCell.swift; sourceTree = "<group>"; };
+		2BBA028F1D729AA800C43755 /* ServiceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceCell.swift; sourceTree = "<group>"; };
+		2BBA02911D729AD500C43755 /* ServiceHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceHeaderView.swift; sourceTree = "<group>"; };
+		2BBA02941D72A81300C43755 /* StylistCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StylistCell.swift; sourceTree = "<group>"; };
+		2BCC41821D8DCAE2001768F5 /* ClientList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientList.swift; sourceTree = "<group>"; };
+		2BCC41851D8E3B60001768F5 /* CalenderViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalenderViewCell.swift; sourceTree = "<group>"; };
+		2BCF66C81D8B708500B0E3EA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2BF887471D768C0B0098635F /* AppointmentSummaryPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppointmentSummaryPage.swift; sourceTree = "<group>"; };
+		2BFAAD751D750AF000F88879 /* TimeSummaryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeSummaryCell.swift; sourceTree = "<group>"; };
+		2BFB8F161D726BDE00F3770C /* HairSalon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HairSalon.swift; sourceTree = "<group>"; };
+		2BFB8F1C1D726DFE00F3770C /* SalonImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SalonImageCell.swift; sourceTree = "<group>"; };
+		2BFB8F1F1D72765000F3770C /* ChoosingServiceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoosingServiceController.swift; sourceTree = "<group>"; };
+		2BFB8F221D72788700F3770C /* ResetAndNextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetAndNextView.swift; sourceTree = "<group>"; };
+		3A50224D2B0AE34B6EC1161D /* Pods-KinzHair.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KinzHair.release.xcconfig"; path = "Pods/Target Support Files/Pods-KinzHair/Pods-KinzHair.release.xcconfig"; sourceTree = "<group>"; };
+		5A74DD05EC503CCE9CB379BF /* Pods-KinzHair.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KinzHair.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KinzHair/Pods-KinzHair.debug.xcconfig"; sourceTree = "<group>"; };
+		C707AC30769BCC63DC191C93 /* Pods_KinzHair.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KinzHair.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,17 +101,59 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				628C3067F1AC6F3C37C80B16 /* Pods_KinzHair.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20218DC51DB3ABD93070D6EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C707AC30769BCC63DC191C93 /* Pods_KinzHair.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2B096D6D1D73E4E30022359D /* ChooseTimePage */ = {
+			isa = PBXGroup;
+			children = (
+				2B096D701D73E9400022359D /* Views */,
+				2B096D6E1D73E50D0022359D /* ChoosingTimeController.swift */,
+			);
+			name = ChooseTimePage;
+			sourceTree = "<group>";
+		};
+		2B096D701D73E9400022359D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2B096D711D73E9530022359D /* TimeHeaderView.swift */,
+				2B096D731D73ED990022359D /* DateSlotsCell.swift */,
+				2B096D751D73EFFA0022359D /* DateCell.swift */,
+				2B096D771D73F34B0022359D /* TimeSlotsCell.swift */,
+				2B096D791D73F4040022359D /* TimeCell.swift */,
+				2BFAAD751D750AF000F88879 /* TimeSummaryCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		2B0C08FB1D777D6C00587EAA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2B0C08F91D777A2A00587EAA /* AppointmentSummaryCell.swift */,
+				2B0C08FC1D777D7E00587EAA /* ConfirmationView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		2B4EC2931D6C981800445A2C = {
 			isa = PBXGroup;
 			children = (
 				2B4EC29E1D6C981800445A2C /* KinzHair */,
 				2B4EC29D1D6C981800445A2C /* Products */,
+				4BFF00FFB81DFC30BC6DCC3C /* Pods */,
+				20218DC51DB3ABD93070D6EA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,12 +169,19 @@
 			isa = PBXGroup;
 			children = (
 				2B4EC2BB1D6C9E8C00445A2C /* ExtensionsAndHelpers */,
+				2B5B2FCF1D7C8F4A00573A92 /* ManagementPage */,
+				2BFB8F151D726B5C00F3770C /* Models */,
 				2B4EC29F1D6C981800445A2C /* AppDelegate.swift */,
 				2B4EC2B21D6C9A1200445A2C /* SiginPages */,
+				2B4EC2C01D6CA23800445A2C /* TabBarConstroller.swift */,
+				2BFB8F1A1D726DE800F3770C /* Home */,
+				2B5B2FDD1D7D0A1900573A92 /* Scheduling */,
+				2B5B2FD91D7D08FB00573A92 /* UserInfoPage */,
 				2B4EC2A31D6C981800445A2C /* Main.storyboard */,
 				2B4EC2A61D6C981800445A2C /* Assets.xcassets */,
 				2B4EC2A81D6C981800445A2C /* LaunchScreen.storyboard */,
 				2B4EC2AB1D6C981800445A2C /* Info.plist */,
+				2BCF66C81D8B708500B0E3EA /* GoogleService-Info.plist */,
 				2B4EC2B11D6C99D700445A2C /* ufonts.com_century-gothic.ttf */,
 			);
 			path = KinzHair;
@@ -82,10 +192,9 @@
 			children = (
 				2B4EC2B31D6C9A2000445A2C /* views */,
 				2B4EC2A11D6C981800445A2C /* SigninRegistorPage.swift */,
-				2B4EC2C01D6CA23800445A2C /* TabBarConstroller.swift */,
 				2B4EC2B71D6C9D2900445A2C /* SigninPage.swift */,
 				2B4EC2B91D6C9D6500445A2C /* RegistrationPage.swift */,
-				2B4EC2BE1D6CA1A500445A2C /* SalonHomePage.swift */,
+				2B0C091C1D77D03600587EAA /* ChooseSalonPage.swift */,
 			);
 			name = SiginPages;
 			sourceTree = "<group>";
@@ -105,6 +214,126 @@
 			name = ExtensionsAndHelpers;
 			sourceTree = "<group>";
 		};
+		2B5B2FCF1D7C8F4A00573A92 /* ManagementPage */ = {
+			isa = PBXGroup;
+			children = (
+				2B5B2FD01D7C8F5400573A92 /* Views */,
+				2B5B2FD11D7C8F6400573A92 /* ManagementPage.swift */,
+			);
+			name = ManagementPage;
+			sourceTree = "<group>";
+		};
+		2B5B2FD01D7C8F5400573A92 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2B5B2FD31D7C8F7F00573A92 /* MenuBar.swift */,
+				2B5B2FD51D7C8F8C00573A92 /* StylistsBar.swift */,
+				2BCC41841D8E3B4A001768F5 /* CalenderCell */,
+				2BCC41821D8DCAE2001768F5 /* ClientList.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		2B5B2FD91D7D08FB00573A92 /* UserInfoPage */ = {
+			isa = PBXGroup;
+			children = (
+				2B5B2FDC1D7D09B300573A92 /* Views */,
+				2B5B2FDA1D7D091500573A92 /* UserInfoPage.swift */,
+			);
+			name = UserInfoPage;
+			sourceTree = "<group>";
+		};
+		2B5B2FDC1D7D09B300573A92 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2B5B2FDE1D7D0AB600573A92 /* AppointmentInfoCell.swift */,
+				2B5B2FE01D7D0AD200573A92 /* UserInfoCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		2B5B2FDD1D7D0A1900573A92 /* Scheduling */ = {
+			isa = PBXGroup;
+			children = (
+				2BFB8F1E1D72760800F3770C /* ReservationPage */,
+				2B096D6D1D73E4E30022359D /* ChooseTimePage */,
+				2BF887461D768BDE0098635F /* AppointmentSummaryPage */,
+			);
+			name = Scheduling;
+			sourceTree = "<group>";
+		};
+		2BCC41841D8E3B4A001768F5 /* CalenderCell */ = {
+			isa = PBXGroup;
+			children = (
+				2B5B2FD71D7C8FE000573A92 /* CalendarView.swift */,
+				2BCC41851D8E3B60001768F5 /* CalenderViewCell.swift */,
+			);
+			name = CalenderCell;
+			sourceTree = "<group>";
+		};
+		2BF887461D768BDE0098635F /* AppointmentSummaryPage */ = {
+			isa = PBXGroup;
+			children = (
+				2B0C08FB1D777D6C00587EAA /* Views */,
+				2BF887471D768C0B0098635F /* AppointmentSummaryPage.swift */,
+			);
+			name = AppointmentSummaryPage;
+			sourceTree = "<group>";
+		};
+		2BFB8F151D726B5C00F3770C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2BFB8F161D726BDE00F3770C /* HairSalon.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		2BFB8F1A1D726DE800F3770C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2BFB8F1B1D726DF000F3770C /* Views */,
+				2B4EC2BE1D6CA1A500445A2C /* SalonHomePage.swift */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		2BFB8F1B1D726DF000F3770C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2BFB8F1C1D726DFE00F3770C /* SalonImageCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		2BFB8F1E1D72760800F3770C /* ReservationPage */ = {
+			isa = PBXGroup;
+			children = (
+				2BFB8F211D72787400F3770C /* Views */,
+				2BFB8F1F1D72765000F3770C /* ChoosingServiceController.swift */,
+			);
+			name = ReservationPage;
+			sourceTree = "<group>";
+		};
+		2BFB8F211D72787400F3770C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2BFB8F221D72788700F3770C /* ResetAndNextView.swift */,
+				2BBA028F1D729AA800C43755 /* ServiceCell.swift */,
+				2BBA02911D729AD500C43755 /* ServiceHeaderView.swift */,
+				2BBA02941D72A81300C43755 /* StylistCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		4BFF00FFB81DFC30BC6DCC3C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5A74DD05EC503CCE9CB379BF /* Pods-KinzHair.debug.xcconfig */,
+				3A50224D2B0AE34B6EC1161D /* Pods-KinzHair.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -112,9 +341,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B4EC2AE1D6C981800445A2C /* Build configuration list for PBXNativeTarget "KinzHair" */;
 			buildPhases = (
+				DF3FD83BCB393C019381FC3C /* [CP] Check Pods Manifest.lock */,
 				2B4EC2981D6C981800445A2C /* Sources */,
 				2B4EC2991D6C981800445A2C /* Frameworks */,
 				2B4EC29A1D6C981800445A2C /* Resources */,
+				CDB114D9C39C8CC7B49EB49F /* [CP] Embed Pods Frameworks */,
+				7424DE6F492F925D3A1349B9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,11 +364,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Ziyin Wang";
 				TargetAttributes = {
 					2B4EC29B1D6C981800445A2C = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -163,26 +396,103 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BBA02931D729EEB00C43755 /* ufonts.com_century-gothic.ttf in Resources */,
 				2B4EC2AA1D6C981800445A2C /* LaunchScreen.storyboard in Resources */,
 				2B4EC2A71D6C981800445A2C /* Assets.xcassets in Resources */,
+				2BCF66C91D8B708500B0E3EA /* GoogleService-Info.plist in Resources */,
 				2B4EC2A51D6C981800445A2C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7424DE6F492F925D3A1349B9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KinzHair/Pods-KinzHair-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDB114D9C39C8CC7B49EB49F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KinzHair/Pods-KinzHair-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF3FD83BCB393C019381FC3C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2B4EC2981D6C981800445A2C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B5B2FDF1D7D0AB600573A92 /* AppointmentInfoCell.swift in Sources */,
 				2B4EC2A21D6C981800445A2C /* SigninRegistorPage.swift in Sources */,
 				2B4EC2C11D6CA23800445A2C /* TabBarConstroller.swift in Sources */,
+				2B096D721D73E9530022359D /* TimeHeaderView.swift in Sources */,
+				2B096D781D73F34B0022359D /* TimeSlotsCell.swift in Sources */,
+				2B5B2FD81D7C8FE000573A92 /* CalendarView.swift in Sources */,
+				2BCC41831D8DCAE2001768F5 /* ClientList.swift in Sources */,
 				2B4EC2BA1D6C9D6500445A2C /* RegistrationPage.swift in Sources */,
+				2B096D6F1D73E50D0022359D /* ChoosingTimeController.swift in Sources */,
+				2BFB8F171D726BDE00F3770C /* HairSalon.swift in Sources */,
+				2BBA02921D729AD500C43755 /* ServiceHeaderView.swift in Sources */,
+				2BFAAD761D750AF000F88879 /* TimeSummaryCell.swift in Sources */,
+				2B096D7A1D73F4040022359D /* TimeCell.swift in Sources */,
+				2B096D741D73ED990022359D /* DateSlotsCell.swift in Sources */,
 				2B4EC2B81D6C9D2900445A2C /* SigninPage.swift in Sources */,
+				2B0C08FA1D777A2A00587EAA /* AppointmentSummaryCell.swift in Sources */,
+				2B5B2FD21D7C8F6400573A92 /* ManagementPage.swift in Sources */,
+				2B5B2FD41D7C8F7F00573A92 /* MenuBar.swift in Sources */,
+				2B0C08FD1D777D7E00587EAA /* ConfirmationView.swift in Sources */,
+				2B0C091D1D77D03600587EAA /* ChooseSalonPage.swift in Sources */,
+				2BCC41861D8E3B60001768F5 /* CalenderViewCell.swift in Sources */,
+				2B5B2FDB1D7D091500573A92 /* UserInfoPage.swift in Sources */,
 				2B4EC2BF1D6CA1A500445A2C /* SalonHomePage.swift in Sources */,
 				2B4EC2A01D6C981800445A2C /* AppDelegate.swift in Sources */,
+				2BFB8F1D1D726DFE00F3770C /* SalonImageCell.swift in Sources */,
+				2BF887481D768C0B0098635F /* AppointmentSummaryPage.swift in Sources */,
+				2B5B2FE11D7D0AD200573A92 /* UserInfoCell.swift in Sources */,
+				2B096D761D73EFFA0022359D /* DateCell.swift in Sources */,
 				2B4EC2BD1D6C9EA000445A2C /* ExtensionsAndHelpers.swift in Sources */,
+				2BBA02951D72A81300C43755 /* StylistCell.swift in Sources */,
+				2B5B2FD61D7C8F8C00573A92 /* StylistsBar.swift in Sources */,
+				2BBA02901D729AA800C43755 /* ServiceCell.swift in Sources */,
+				2BFB8F201D72765000F3770C /* ChoosingServiceController.swift in Sources */,
+				2BFB8F231D72788700F3770C /* ResetAndNextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,8 +532,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -268,8 +580,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -288,6 +602,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -295,23 +610,27 @@
 		};
 		2B4EC2AF1D6C981800445A2C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A74DD05EC503CCE9CB379BF /* Pods-KinzHair.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KinzHair/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ziyincody.KinzHair;
+				PRODUCT_BUNDLE_IDENTIFIER = kinzcorp.com.kinzHair.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		2B4EC2B01D6C981800445A2C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A50224D2B0AE34B6EC1161D /* Pods-KinzHair.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KinzHair/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ziyincody.KinzHair;
+				PRODUCT_BUNDLE_IDENTIFIER = kinzcorp.com.kinzHair.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -334,6 +653,7 @@
 				2B4EC2B01D6C981800445A2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -8,13 +8,14 @@
 
 import UIKit
 
-class dateCell: BaseCollectionViewCell {
+class DateCell: BaseCollectionViewCell {
     
     let dayLabel:UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = UIFont(name: "Century Gothic", size: 20)
-        label.textAlignment = .Center
+        label.font = UIFont(name: "Century Gothic", size: 18)
+        label.textAlignment = .center
+        label.textColor = UIColor.white
         return label
     }()
     
@@ -22,18 +23,21 @@ class dateCell: BaseCollectionViewCell {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont(name: "Century Gothic", size: 20)
-        label.textAlignment = .Center
+        label.textAlignment = .center
+        label.textColor = UIColor.white
         return label
     }()
     
     override func setupViews() {
-        addSubview(stylistImageView)
-        addSubview(stylistNameLabel)
+        addSubview(dayLabel)
+        addSubview(dateLabel)
         
-        addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|[v0][v1(30)]|", options: NSLayoutFormatOptions(), metrics: nil, views: ["v0":stylistImageView, "v1":stylistNameLabel]))
+        backgroundColor = UIColor.black
         
-        stylistImageView.widthAnchor.constraintEqualToAnchor(self.widthAnchor).active = true
-        stylistNameLabel.widthAnchor.constraintEqualToAnchor(self.widthAnchor).active = true
+        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[v0][v1(30)]|", options: NSLayoutFormatOptions(), metrics: nil, views: ["v0":dayLabel, "v1":dateLabel]))
+        
+        dayLabel.widthAnchor.constraint(equalTo: self.widthAnchor).isActive = true
+        dateLabel.widthAnchor.constraint(equalTo: self.widthAnchor).isActive = true
         
     }
     

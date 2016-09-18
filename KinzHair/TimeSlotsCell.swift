@@ -9,90 +9,118 @@
 import UIKit
 
 
-class TimeCell: BaseTableViewCell, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate,UICollectionViewDataSource {
+class TimeSlotsCell: BaseTableViewCell, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate,UICollectionViewDataSource {
     
     let cellId = "cellId"
     
-    var hours:[String] = []
+    var choosingTimeController:ChoosingTimeController?
+
+    var hours:[String]? {
+        didSet {
+            collectionView.reloadData()
+        }
+    }
+    
+    var appointment:HairSalon.Appointment? {
+        didSet {
+            collectionView.reloadData()
+        }
+    }
     
     lazy var collectionView:UICollectionView = {
         let flowLayout = UICollectionViewFlowLayout()
-        flowLayout.scrollDirection = .Horizontal
+        flowLayout.scrollDirection = .horizontal
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: flowLayout)
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.translatesAutoresizingMaskIntoConstraints = false
-        collectionView.registerClass(DateCell.self, forCellWithReuseIdentifier: self.cellId)
-        collectionView.backgroundColor = UIColor.blackColor()
+        collectionView.register(TimeCell.self, forCellWithReuseIdentifier: self.cellId)
+        collectionView.backgroundColor = UIColor.black
         return collectionView
     }()
     
-    let monthLabel:UILabel = {
+    let cellTitle:UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont(name: "CenturyGothic", size: 15)
-        label.textColor = UIColor.whiteColor()
-        label.text = "August"
+        label.textColor = UIColor.white
+        label.text = "Available Times"
+        return label
+    }()
+    
+    let selectedTimeLabel:UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = UIFont(name: "CenturyGothic", size: 15)
+        label.textColor = UIColor.white
+        label.text = "Day.Month Year at Time"
         return label
     }()
     
     override func setupViews() {
         super.setupViews()
-
-        backgroundColor = UIColor.blackColor()
         
-        addSubview(monthLabel)
+        backgroundColor = UIColor.black
+        
+        addSubview(cellTitle)
         addSubview(collectionView)
+        addSubview(selectedTimeLabel)
         
-        monthLabel.topAnchor.constraintEqualToAnchor(self.topAnchor,constant: 5).active = true
-        monthLabel.centerXAnchor.constraintEqualToAnchor(self.centerXAnchor).active = true
-        monthLabel.heightAnchor.constraintEqualToConstant(20).active = true
+        cellTitle.topAnchor.constraint(equalTo: self.topAnchor,constant: 5).isActive = true
+        cellTitle.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
+        cellTitle.heightAnchor.constraint(equalToConstant: 20).isActive = true
         
-        collectionView.bottomAnchor.constraintEqualToAnchor(self.bottomAnchor,constant: -8).active = true
-        collectionView.leftAnchor.constraintEqualToAnchor(self.leftAnchor,constant: 20).active = true
-        collectionView.rightAnchor.constraintEqualToAnchor(self.rightAnchor,constant: -20).active = true
-        collectionView.heightAnchor.constraintEqualToConstant(60).active = true
+        collectionView.leftAnchor.constraint(equalTo: self.leftAnchor,constant: 20).isActive = true
+        collectionView.rightAnchor.constraint(equalTo: self.rightAnchor,constant: -20).isActive = true
+        collectionView.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
+        collectionView.heightAnchor.constraint(equalToConstant: 25).isActive = true
+        
+        selectedTimeLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor,constant: -8).isActive = true
+        selectedTimeLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
+        selectedTimeLabel.heightAnchor.constraint(equalToConstant: 20).isActive = true
     }
     
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        return 30
+        return hours != nil ? hours!.count : 0
     }
     
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(self.cellId, forIndexPath: indexPath) as! DateCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: self.cellId, for: indexPath) as! TimeCell
         
-        cell.dayLabel.text = {
-            switch days[indexPath.item].weekday {
-            case 1:
-                return "MON"
-            case 2:
-                return "TUE"
-            case 3:
-                return "WED"
-            case 4:
-                return "TUR"
-            case 5:
-                return "FRI"
-            case 6:
-                return "SAT"
-            case 7:
-                return "SUN"
-            default:
-                return "12345"
+        if let hour = hours?[(indexPath as NSIndexPath).item] {
+            
+            cell.timeLabel.text = hour
+            
+            if let appointment = self.appointment {
+                
+                if appointment.time == hour {
+                    cell.timeLabel.backgroundColor = UIColor.white
+                    cell.timeLabel.textColor = UIColor.black
+                } else {
+                    cell.timeLabel.backgroundColor = UIColor.black
+                    cell.timeLabel.textColor = UIColor.white
+                }
             }
-        }()
-        
-        cell.dateLabel.text = String(days[indexPath.item].day)
+        }
         
         return cell
         
     }
     
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        return CGSizeMake(50, 50)
+        if let hour = hours?[(indexPath as NSIndexPath).item] {
+            
+            appointment?.time = hour
+            choosingTimeController?.serviceTable.reloadData()
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        return CGSize(width: 70, height: 25)
     }
     
 }
